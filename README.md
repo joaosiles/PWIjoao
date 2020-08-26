@@ -1,6 +1,6 @@
 ## Aula de PWI da ETEC Camargo Aranha
 
-*Curso de Desenvolvimento de Sistemas 1º Semestre de 2020*
+*Curso de Desenvolvimento de Sistemas 1º Semestre de 2020 lindo*
 
  - Extensões utilizadas no VSCode
  
