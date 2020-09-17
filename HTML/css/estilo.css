@@ -1,0 +1,27 @@
+body {
+    background-color: green;
+}
+/* Isso é um comentário */
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    color: white;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    filter: brightness(30%);
+}
+
+h2 {
+    color: red;
+}
