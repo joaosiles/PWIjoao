@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Validação</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <div class="">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" value="">
+      </div>
+      <div class="">
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" value="">
+      </div>
+      <div class="">
+        <button type="submit" name="button">Enviar form</button>
+      </div>
+    </form>
+
+    <a href="aula6iii.html">Próximo exemplo</a>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('form').submit(function() {
+        if ($('#nome').val() === '') {  
+          alert('Campo nome vazio');
+          return false;
+        }
+        if ($('#email').val() === '') {
+          alert('Campo e-mail vazio');
+          return false;
+        }
+      })
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Teste JQuery</title> <!-- Uma biblioteca Javascript -->
+  </head>
+  <body>
+    <button type="button" name="button" id="botaoMagico">Clique aqui e veja a mágica</button>
+    
+    <div id="conteudo"></div>
+    <div class="estilo1"></div>
+    <div class="estilo1"></div>
+    <div class="estilo1"></div>
+
+    <a href="aula6ii.html">Próximo exemplo</a>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('#botaoMagico').click(() => {
+        $('#conteudo').html('Conteudo inserido de forma dinamica usando o id do elemento alvo') //conteúdo é um ID da div
+        $('.estilo1').html('Conteudo inserido de forma dinamica usando o nome da classe de estilo do css') //estilo é uma classe css do elemento usada como nome-referência
+      })
+    </script>    
+  </body>
+</html>

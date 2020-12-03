@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Validação</title>
+    <style media="screen">
+      .erro {
+        color: red;
+        font-size: 12px
+      }
+    </style>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <div class="">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" value="">
+      </div>
+      <div class="">
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" value="">
+      </div>
+      <div class="erro"></div>
+      <div class="">
+        <button type="submit" name="button">Enviar form</button>
+      </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('form').submit(function() {
+        if ($('#nome').val() === '') {
+          $('.erro').html('Preencha o campo nome')
+          return false;
+        }
+        if ($('#email').val() === '') {
+          $('.erro').html('Preencha o campo e-mail')
+          return false;
+        }
+      })
+
+      $('input').keydown(function() {
+        $('.erro').html('')
+      })
+
+    </script>
+  </body>
+</html>
